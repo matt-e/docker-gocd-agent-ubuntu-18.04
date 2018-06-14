@@ -42,7 +42,7 @@ RUN \
   groupadd -g ${GID} go && \
   useradd -u ${UID} -g go -d /home/go -m go && \
   apt-get update && \
-  apt-get install -y openjdk-11-jre-headless git subversion mercurial openssh-client bash unzip curl && \
+  apt-get install -y openjdk-8-jre-headless git subversion mercurial openssh-client bash unzip curl && \
   apt-get autoclean && \
 # download the zip file
   curl --fail --location --silent --show-error "https://download.gocd.org/binaries/18.6.0-6883/generic/go-agent-18.6.0-6883.zip" > /tmp/go-agent.zip && \
